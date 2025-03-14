@@ -19,10 +19,9 @@ Week one javascript practice
 4.Extra Practice Questions:
   i)Bubble sort:
     The sortArray funtions receives input from a user and coverts to an array,
-    using temporary variables the value are reassigned if  the value of the left is greater than that on the right;
-      future impovement:Stopping the itteration when all the values are arranged.
+    using temporary variables the value are reassigned if  the value of the left is greater than that on the right,the loop ends when the array is sorted.
   ii)The step fuction is called with a number as an arguement it prints out stair(#) after being incremented with 
-      onestair(#) in each iteration less than the arguement(number).
+      onestair(#) in each loop less than the arguement(number).
   iii)The function cylinderVolume receives two arguments the radius and height respectively and construcst an object 
        based on this values.The volume method of the object computes the volume of the cylinder and the value is 
        returned.
