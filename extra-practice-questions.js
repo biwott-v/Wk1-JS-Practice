@@ -1,14 +1,19 @@
 //Bubble Sort
-function sortArray(myarray){
+function sortArray(){
   myarray=prompt("Enter a list of number ie '5,4,3,2,1'").split(",");
   for (let i =0; i<=myarray.length; i++){
+    complete=0;
     for(let i=0;i<=myarray.length;i++){
       let y=i+1;
       if(myarray[i]>myarray[y]){
         let b = myarray[i];
         myarray[i]=myarray[y];
         myarray[y]=b;
+        complete++;
       }
+    }
+    if(complete===0){
+      break;
     }
   }
   return myarray;
