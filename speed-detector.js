@@ -1,5 +1,5 @@
-function speedDetector(){
-  let speed = prompt("Enter the speed of a car");
+function speedDetector(speed){
+  //let speed = prompt("Enter the speed of a car");
   let demeritPoints=0;
   if(speed <= 70 ){
     return "Ok";
@@ -16,3 +16,13 @@ function speedDetector(){
 
 }
 
+
+//Function testing using Event listeners via the browser
+
+
+let points = document.querySelector("#demerits"),form1=document.querySelector("#speeddetector"),driverSpeed=document.querySelector("#speed");
+form1.addEventListener("submit",(event)=>{
+  let value=speedDetector(driverSpeed.value);
+  points.textContent=value;
+  event.preventDefault();
+})
